@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="635.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AppController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="111.0" layoutY="35.0" prefHeight="48.0" prefWidth="128.0" text="PACKAGE" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="264.0" layoutY="35.0" prefHeight="48.0" prefWidth="128.0" text="PHONE" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="427.0" layoutY="35.0" prefHeight="48.0" prefWidth="128.0" text="OPTION" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="packOne" layoutX="126.0" layoutY="110.0" mnemonicParsing="false" text="300 Minutes" textFill="#d0cece">
+         <font>
+            <Font name="Century Gothic Italic" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="packTwo" layoutX="126.0" layoutY="153.0" mnemonicParsing="false" text="800 Minutes" textFill="#d0cece">
+         <font>
+            <Font name="Century Gothic Italic" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="packThree" layoutX="126.0" layoutY="198.0" mnemonicParsing="false" text="1500 Minutes" textFill="#d0cece">
+         <font>
+            <Font name="Century Gothic Italic" size="13.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="closeBtn" alignment="BOTTOM_LEFT" contentDisplay="CENTER" layoutX="606.0" prefHeight="34.0" prefWidth="30.0" text="X" textFill="#656565">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="phoneOne" layoutX="287.0" layoutY="110.0" mnemonicParsing="false" text="Model 100" textFill="#d0cece">
+         <font>
+            <Font name="Century Gothic Italic" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="phoneTwo" layoutX="287.0" layoutY="153.0" mnemonicParsing="false" text="Model 110" textFill="#d0cece">
+         <font>
+            <Font name="Century Gothic Italic" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="phoneThree" layoutX="287.0" layoutY="198.0" mnemonicParsing="false" text="Model 200" textFill="#d0cece">
+         <font>
+            <Font name="Century Gothic Italic" size="13.0" />
+         </font>
+      </RadioButton>
+      <CheckBox fx:id="Opt1" layoutX="455.0" layoutY="111.0" mnemonicParsing="false" onAction="#voiceMailChecked" text="Voice Mail" textFill="#d0cece">
+         <font>
+            <Font name="Century Gothic Italic" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="optTwo" layoutX="455.0" layoutY="153.0" mnemonicParsing="false" onAction="#textMsgChecked" text="Text Messaging" textFill="#d0cece">
+         <font>
+            <Font name="Century Gothic Italic" size="13.0" />
+         </font>
+      </CheckBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="154.0" layoutY="306.0" prefHeight="48.0" prefWidth="356.0" text="6% Sale tax is included in shown price" textFill="#d0cece">
+         <font>
+            <Font name="Century Gothic Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="126.0" layoutY="252.0" prefHeight="48.0" prefWidth="69.0" text="Price:" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceTxt" alignment="BOTTOM_LEFT" layoutX="206.0" layoutY="263.0" prefHeight="26.0" prefWidth="105.0" text="0" textFill="#d0cece">
+         <font>
+            <Font name="Century Gothic Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="buyBtn" layoutX="389.0" layoutY="264.0" mnemonicParsing="false" onAction="#buyPackage" prefHeight="25.0" prefWidth="186.0" text="Buy This Package" />
+      <Label alignment="BOTTOM_LEFT" layoutX="195.0" layoutY="263.0" prefHeight="26.0" prefWidth="13.0" text="\$" textFill="#d0cece">
+         <font>
+            <Font name="Century Gothic Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
