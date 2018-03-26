@@ -17,7 +17,7 @@ public class AppMain extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// load the fxml
-				Parent root = FXMLLoader.load(getClass().getResource("Gui.fxml"));
+				Parent root = FXMLLoader.load(getClass().getResource("GuiV2.fxml"));
 				
 				primaryStage.initStyle(StageStyle.UNDECORATED);  // hides window border
 				

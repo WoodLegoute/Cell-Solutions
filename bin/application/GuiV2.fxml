@@ -22,32 +22,38 @@
             <Font name="Calibri" size="25.0" />
          </font>
       </Label>
-      <RadioButton fx:id="packOne" layoutX="126.0" layoutY="110.0" mnemonicParsing="false" text="300 Minutes" textFill="#d0cece">
+      <RadioButton fx:id="packOne" layoutX="126.0" layoutY="110.0" mnemonicParsing="false" onAction="#packOneClicked" text="300 Minutes" textFill="#d0cece">
+         <font>
+            <Font name="Century Gothic Italic" size="13.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="packageGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="packTwo" layoutX="126.0" layoutY="153.0" mnemonicParsing="false" onAction="#packTwoClicked" text="800 Minutes" textFill="#d0cece" toggleGroup="$packageGroup">
          <font>
             <Font name="Century Gothic Italic" size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="packTwo" layoutX="126.0" layoutY="153.0" mnemonicParsing="false" text="800 Minutes" textFill="#d0cece">
+      <RadioButton fx:id="packThree" layoutX="126.0" layoutY="198.0" mnemonicParsing="false" onAction="#packThreeClicked" text="1500 Minutes" textFill="#d0cece" toggleGroup="$packageGroup">
          <font>
             <Font name="Century Gothic Italic" size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="packThree" layoutX="126.0" layoutY="198.0" mnemonicParsing="false" text="1500 Minutes" textFill="#d0cece">
+      <RadioButton fx:id="phoneOne" layoutX="287.0" layoutY="110.0" mnemonicParsing="false" onAction="#phoneOneClicked" text="Model 100" textFill="#d0cece">
+         <font>
+            <Font name="Century Gothic Italic" size="13.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="phoneGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="phoneTwo" layoutX="287.0" layoutY="153.0" mnemonicParsing="false" onAction="#phoneTwoClicked" text="Model 110" textFill="#d0cece" toggleGroup="$phoneGroup">
          <font>
             <Font name="Century Gothic Italic" size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="phoneOne" layoutX="287.0" layoutY="110.0" mnemonicParsing="false" text="Model 100" textFill="#d0cece">
-         <font>
-            <Font name="Century Gothic Italic" size="13.0" />
-         </font>
-      </RadioButton>
-      <RadioButton fx:id="phoneTwo" layoutX="287.0" layoutY="153.0" mnemonicParsing="false" text="Model 110" textFill="#d0cece">
-         <font>
-            <Font name="Century Gothic Italic" size="13.0" />
-         </font>
-      </RadioButton>
-      <RadioButton fx:id="phoneThree" layoutX="287.0" layoutY="198.0" mnemonicParsing="false" text="Model 200" textFill="#d0cece">
+      <RadioButton fx:id="phoneThree" layoutX="287.0" layoutY="198.0" mnemonicParsing="false" onAction="#phoneThreeClicked" text="Model 200" textFill="#d0cece" toggleGroup="$phoneGroup">
          <font>
             <Font name="Century Gothic Italic" size="13.0" />
          </font>
