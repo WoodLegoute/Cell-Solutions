@@ -14,12 +14,12 @@ public class AppController {
 
     @FXML
     private Button buyBtn;
+    
+    @FXML
+    private Button closeBtn;
 
     @FXML
     private RadioButton packTwo;
-
-    @FXML
-    private Label closeBtn;
 
     @FXML
     private RadioButton packThree;
@@ -47,7 +47,6 @@ public class AppController {
 
     }
 
-
     @FXML
     void textMsgChecked(ActionEvent event) {
 
@@ -55,7 +54,13 @@ public class AppController {
 
     @FXML
     void buyPackage(ActionEvent event) {
-
+    	System.out.println("buy button clicked");
+    }
+    
+    @FXML
+    void closeBtnAction(ActionEvent event) {
+    	System.out.println("close button clicked");
+    	System.exit(0);
     }
 
 

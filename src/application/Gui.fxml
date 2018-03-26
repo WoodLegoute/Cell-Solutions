@@ -5,7 +5,6 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="635.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AppController">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="111.0" layoutY="35.0" prefHeight="48.0" prefWidth="128.0" text="PACKAGE" textFill="WHITE">
@@ -38,11 +37,6 @@
             <Font name="Century Gothic Italic" size="13.0" />
          </font>
       </RadioButton>
-      <Label fx:id="closeBtn" alignment="BOTTOM_LEFT" contentDisplay="CENTER" layoutX="606.0" prefHeight="34.0" prefWidth="30.0" text="X" textFill="#656565">
-         <font>
-            <Font name="Calibri" size="25.0" />
-         </font>
-      </Label>
       <RadioButton fx:id="phoneOne" layoutX="287.0" layoutY="110.0" mnemonicParsing="false" text="Model 100" textFill="#d0cece">
          <font>
             <Font name="Century Gothic Italic" size="13.0" />
@@ -89,5 +83,10 @@
             <Font name="Century Gothic Bold Italic" size="18.0" />
          </font>
       </Label>
+      <Button fx:id="closeBtn" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="588.0" mnemonicParsing="false" onAction="#closeBtnAction" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: #262626;" text="X" textFill="#797676">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
